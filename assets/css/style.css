@@ -1,0 +1,36 @@
+@import url("http://atmpl.ru/design/galleries/2015/lightbox/lightbox.css");
+/* lightbox */
+.gallery-bts img {max-width:100%}
+.gallery-bts{margin-top:2em;padding-bottom:3em}
+
+
+ul{
+	list-style-type: none;
+}
+.thumbbottom{
+	text-align: center;
+}
+.center{
+	text-align: center;
+}
+@media screen and (max-width: 767px){
+	.masonry[data-columns]::before{
+		content: '1 .col-xs-12';
+		}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+	.masonry[data-columns]::before{
+		content: '2 .col-xs-6';
+		}
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+	.masonry[data-columns]::before{
+		content: '3 .col-xs-4 col-md-4';
+		}
+}
+@media screen and (min-width: 1200px){
+	.masonry[data-columns]::before{
+		content: '4 .col-xs-3';
+		}
+}
